@@ -1,0 +1,168 @@
+/*
+CSS
+Author: Maria Serrano
+Date: 2023-7-28
+Filename: main.css
+*/
+/*HTML and Body Styles*/
+address, article, aside, blockquote, body, cite, div, h1, h2, h3,footer, header, img, main, nav, section, section1, ul
+{display: block;
+background: transparent;
+font-size: 100%;
+margin: 0;
+padding: 0;
+vertical-align: baseline;
+box-sizing: border-box;}
+body{line-height: 1;
+background-color: rgba(248, 218, 90, 0.17);
+font-family: 'Trebuchet MS', Helvetica, sans-serif;
+padding: 5px;
+margin-left: auto;
+margin-right: auto;
+max-width: 960px;
+min-width: 640px;
+width: 95%;}
+
+/* Body Header Styles*/
+.center{  display: block;
+margin-left: auto;
+margin-right: auto;
+width: 100%;}
+h2{text-align: center;
+line-height: 2.5em}
+h3{text-align: center;
+line-height: 2.5em;
+font-size: 2.0em;}
+nav ul{list-style: none;
+list-style-image: none;}
+nav a{text-decoration: none;}
+
+/* Horizontal Navigation Styles */
+body>header>nav.horizontalNavigation li{width: 25%;}
+nav.horizontalNavigation li{display: block;
+float: left;}
+nav>ul{line-height: 1.5em;
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #59a5b7;}
+nav>ul>li a{float:left;
+display: block;
+color: #ffffff;
+text-align: center;
+padding: 6px 6px;
+text-decoration: none;
+width: 20%;}
+nav>ul>li a:hover:not(.active){background-color: rgba(253, 129, 119, 0.81);}
+.active{background-color: #eadbdb;}
+
+/*Grid Styles for Page Body*/  
+body{display: grid;
+grid-template-areas:"header header"
+                    "h2  h2"
+                    "paragraph img"
+                    "footer footer";
+
+grid-gap: 25px;}
+
+body>*{outline: 2px solid #be0855;}
+section>*{outline: 2px dashed #2721be;}
+
+body>header{
+    grid-area: header;
+    grid-column: 1/-1;
+}
+
+h1{align-self: center;}
+
+body>h2{
+    grid-area: h2;
+    grid-column:1/-1;}
+
+h2{color: #1731c1;
+letter-spacing: .3em;
+text-align: center;
+font-size: 2.5em;
+align-self: center;
+justify-self: center;}
+
+body>img{
+grid-area: img;
+grid-column: 2;
+}
+
+body>paragraph{
+    grid-area: paragraph;
+    grid-column: 1/-1;}
+
+p{color: #000000;
+text-align: left;
+font-size: 1.5em;
+margin-bottom: 20px;
+margin-right: 20px;
+margin-left: 20px;}
+
+body>input{
+    grid-area: paragraph;}
+
+input[type=text]{width: 75%;
+padding: 6px 12px;
+margin: 5px 0;
+margin-left: 10px;
+box-sizing: border-box;
+border: 2px solid #78b9db;
+border-radius: 10px;}
+
+input[type=tel]{width: 25%;
+padding: 6x 12;
+margin: 5px 0;
+margin-left: 10px;
+box-sizing: border-box;
+border: 2px solid #78b9db;
+border-radius: 10px;}
+
+input[type=email]{width: 25%;
+padding: 6x 12;
+margin: 5px 0;
+margin-left: 10px;
+box-sizing: border-box;
+border: 2px solid #78b9db;
+border-radius: 10px;}
+
+input[type=message]{width: 75%;
+padding: 30px 50px;
+margin: 5px 0;
+margin-left: 10px;
+box-sizing: border-box;
+border: 2px solid #78b9db;
+border-radius: 10px;
+margin-bottom: 20px;}
+
+input[type=submit]{padding: 5px 10px;
+margin: 5px 0;
+margin-left: 10px;
+box-sizing: border-box;
+border: 2px solid #7accb9;
+color: #ffffff;
+background-color: #83c0e6;
+border-radius: 10px}
+
+input[type=reset]{padding: 5px 10px;
+margin: 8px 0;
+margin-left: 10px;
+box-sizing: border-box;
+border: 2px solid #c74d4d;
+color: #ffffff;
+background-color: #e68383;
+border-radius: 10px;}
+
+body>footer{
+    grid-area: footer;
+    grid-column:1/-1;}
+
+footer{background-color: #d4c46d;
+color: #ffffff;
+font: small small-caps bold 0.8em/3em Quicksand, Verdana, Geneva, sans-serif;
+text-align: center;
+clear: right;}
