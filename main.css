@@ -78,9 +78,5 @@ input[type=email]{width: 25%;padding: 6x 12;margin: 5px 0;margin-left: 10px;box-
 input[type=message]{width: 75%;padding: 30px 50px;margin: 5px 0;margin-left: 10px;box-sizing: border-box;border: 2px solid #78b9db;border-radius: 10px;margin-bottom: 20px;}
 input[type=submit]{padding: 5px 10px;margin: 5px 0;margin-left: 10px;box-sizing: border-box;border: 2px solid #7accb9;color: #ffffff;background-color: #83c0e6;border-radius: 10px}
 input[type=reset]{padding: 5px 10px;margin: 8px 0;margin-left: 10px;box-sizing: border-box;border: 2px solid #c74d4d;color: #ffffff;background-color: #e68383;border-radius: 10px;}
-/* Card Columns*/
-div#card{margin: 5px;border: 1px dotted #ccc;}
-div.card img{width: 25%;height: 25%;}
-div.desc{padding: 2px;text-align: auto;font-size: 2em}
 body>footer{grid-area: footer;grid-column:1/-1;}
 footer{background-color: #d4c46d;color: #ffffff;font: small small-caps bold 0.8em/3em Quicksand, Verdana, Geneva, sans-serif;text-align: center;clear: right;}
