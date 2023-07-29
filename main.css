@@ -35,7 +35,6 @@ font-size: 2.0em;}
 nav ul{list-style: none;
 list-style-image: none;}
 nav a{text-decoration: none;}
-
 /* Horizontal Navigation Styles */
 body>header>nav.horizontalNavigation li{width: 25%;}
 nav.horizontalNavigation li{display: block;
