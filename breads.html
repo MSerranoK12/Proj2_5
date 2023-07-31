@@ -27,36 +27,37 @@ Date: 2023-7-28
 <li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
-</header>
+</header>    
 <div id="h2">
-<h2>Breads</h2>
-    
-<!-- Accordion -->
-
-<div class="accordion" id="breads">
-  <div class="accordion-item">
-<h3 class="accordion-header" id="heading-1">
-  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#coffee-cake" aria-expanded="true" aria-controls="coffee-cake">
-    <strong>Coffee Cake</strong>
-      </button></h3>
-<div id="coffee-cake" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#breads">
-<div class="accordion-body">
-Tia Chuy's coffee cake is a bite of heaven. A buttery sweet top layer of cinnamon crumble makes for the perfect pairing with your morning coffee.</div>
+<h2>Breads - Panes</h2>
+<div class="row">
+<div class="column">
+<img src="loaf2.jpg" alt="Orange Loaf" class="center" style="width:75%">
 </div>  
-</div>   
+<div class="column">
+<img src="Holidayimage.jpg" alt="Holiday Loaf" class="center" style="width:75%">
 </div>
- <div class="accordion" id="breads">
- <div class="accordion-item">
-<h3 class="accordion-header" id="heading-2">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#orange-loaf" aria-expanded="true" aria-controls="orange-loaf">
-      <strong>Orange Loaf</strong> 
-      </button></h3>
-<div id="orangeLoaf" class="accordion-collapse collapse show" data-bs-parent="#breads">
-      <div class="accordion-body">
-       The orange loaf is made from fresh squeezed oranges and Tia Chuy's family recipe has been passed down for four generations.</div>
+<div class="column">
+<img src="loaf3.jpg" alt="Baking" class="center" style="width:75%">
+</div>
+<button class="accordion" style="width:95%">Coffee Cake</button>
+<div class="panel" style="width:95%">
+<p>Tia Chuy's coffee cake is a bite of heaven. A buttery sweet top layer of cinnamon crumble makes for the perfect pairing with your morning coffee.</p></div>
+<button class="accordion" style="width:95%">Orange Loaf</button>
+<div class="panel"style="width:95%">
+<p>The orange loaf is made with the juice of freshly squeezed oranges. The family recipe has been passed down for four generations.</p>
 </div>
 </div>
-</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {this.classList.toggle("active");var panel = this.nextElementSibling;if (panel.style.display === "block") {panel.style.display = "none";} else {
+panel.style.display = "block";}
+  });
+}
+</script>
+<br>
 <div id="footer"></div> 
 <footer>Tia Chuy's Kookies  &#8226;1818 Cookie Lane, Los Angeles CA 90080 &#8226; 562-555-5555 &#8226; <a href="mailto:TCKookies@example.com">Tia Chuy's Kookies</a></footer>
 </div>
